@@ -21,5 +21,3 @@ This repository contains JSON configuration files for the following shortcuts:
 1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
 2. Copy the desired JSON files from the `shortcuts/` directory into your Karabiner-Elements configuration folder (usually `~/.config/karabiner/assets/complex_modifications/`).
 3. Open Karabiner-Elements and add the imported rules from the "Complex Modifications" tab.
-
-## License
