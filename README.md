@@ -1,4 +1,4 @@
-# mac-shortcuts
+# MacOS Shortcuts (Modified)
 
 A collection of custom macOS keyboard shortcuts for use with tools like Karabiner-Elements.
 
