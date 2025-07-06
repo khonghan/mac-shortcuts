@@ -1,0 +1,37 @@
+{
+  "description": "Keyboard Brightness",
+  "manipulators": [
+      {
+          "from": {
+              "key_code": "f5",
+              "modifiers": {
+                  "mandatory": [],
+                  "optional": ["any"]
+              }
+          },
+          "to": [
+              {
+                  "key_code": "illumination_decrement",
+                  "modifiers": []
+              }
+          ],
+          "type": "basic"
+      },
+      {
+          "from": {
+              "key_code": "f6",
+              "modifiers": {
+                  "mandatory": [],
+                  "optional": ["any"]
+              }
+          },
+          "to": [
+              {
+                  "key_code": "illumination_increment",
+                  "modifiers": []
+              }
+          ],
+          "type": "basic"
+      }
+  ]
+}

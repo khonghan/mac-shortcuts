@@ -1,0 +1,20 @@
+{
+  "description": "Restart",
+  "manipulators": [
+    {
+      "type": "basic",
+      "from": {
+        "key_code": "r",
+        "modifiers": {
+          "mandatory": ["control", "option"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "shell_command": "osascript -e 'tell app \"System Events\" to restart'"
+        }
+      ]
+    }
+  ]
+}
