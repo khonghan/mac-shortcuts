@@ -1,0 +1,21 @@
+{
+  "description": "Mission Control",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "f3",
+        "modifiers": {
+          "mandatory": [],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "mission_control",
+          "modifiers": []
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
