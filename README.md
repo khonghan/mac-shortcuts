@@ -1,23 +1,85 @@
-# MacOS Shortcuts (Modified)
+# macOS Shortcuts
 
-A collection of custom macOS keyboard shortcuts for use with tools like Karabiner-Elements.
+This repository contains a collection of custom macOS shortcuts and key mappings for use with Karabiner-Elements or similar key remapping tools.
 
-## Shortcuts
+## Shortcuts Overview
 
-This repository contains JSON configuration files for the following shortcuts:
+### 🎯 Mission Control
+- **File**: `f3.json`
+- **Key**: F3
+- **Action**: Opens Mission Control
+- **Description**: Quick access to Mission Control for managing desktops and windows
 
-- **Keyboard Brightness** ([shortcuts/keyboard-brightness.json](shortcuts/keyboard-brightness.json))
-  - `F5`: Decrease keyboard backlight brightness
-  - `F6`: Increase keyboard backlight brightness
+### 💡 Keyboard Brightness Control
+- **File**: `keyboard-brightness.json`
+- **Keys**: 
+  - F5: Decrease keyboard backlight brightness
+  - F6: Increase keyboard backlight brightness
+- **Action**: Controls the backlight brightness of your MacBook's keyboard
 
-- **Restart** ([shortcuts/restart.json](shortcuts/restart.json))
-  - `Control + Option + R`: Restart the Mac
+### 🖥️ System Control
+- **File**: `shut-down.json`
+- **Key**: Control + Option + S
+- **Action**: Shuts down the Mac
+- **Description**: Quick shutdown shortcut
 
-- **Shut Down** ([shortcuts/shut-down.json](shortcuts/shut-down.json))
-  - `Control + Option + S`: Shut down the Mac
+- **File**: `restart.json`
+- **Key**: Control + Option + R
+- **Action**: Restarts the Mac
+- **Description**: Quick restart shortcut
 
-## Usage
+## Installation
 
-1. Install [Karabiner-Elements](https://karabiner-elements.pqrs.org/).
-2. Copy the desired JSON files from the `shortcuts/` directory into your Karabiner-Elements configuration folder (usually `~/.config/karabiner/assets/complex_modifications/`).
-3. Open Karabiner-Elements and add the imported rules from the "Complex Modifications" tab.
+1. **Install Karabiner-Elements** (if not already installed):
+   - Download from: https://karabiner-elements.pqrs.org/
+   - Or install via Homebrew: `brew install --cask karabiner-elements`
+
+2. **Import Shortcuts**:
+   - Open Karabiner-Elements
+   - Go to "Simple Modifications" tab
+   - Click the "+" button to add a new rule
+   - Select the desired shortcut file
+   - Enable the rule
+
+## File Format
+
+All shortcut files use the Karabiner-Elements JSON format with the following structure:
+
+```json
+{
+  "description": "Shortcut Description",
+  "manipulators": [
+    {
+      "from": {
+        "key_code": "key_name",
+        "modifiers": {
+          "mandatory": ["modifier1", "modifier2"],
+          "optional": ["any"]
+        }
+      },
+      "to": [
+        {
+          "key_code": "action_name"
+        }
+      ],
+      "type": "basic"
+    }
+  ]
+}
+```
+
+## Requirements
+
+- macOS 10.12 or later
+- Karabiner-Elements
+- Administrator privileges for system-level shortcuts
+
+## Notes
+
+- Some shortcuts may require granting accessibility permissions to Karabiner-Elements
+- System shortcuts (shutdown/restart) use shell commands and may require additional permissions
+- Keyboard brightness shortcuts work on MacBooks with backlit keyboards
+
+## Contributing
+
+Feel free to add more shortcuts or modify existing ones. Each shortcut should be in its own JSON file with a descriptive filename and clear documentation.
