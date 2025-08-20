@@ -4,12 +4,6 @@ This repository contains a collection of custom macOS shortcuts and key mappings
 
 ## Shortcuts Overview
 
-### 🎯 Mission Control
-- **File**: `f3.json`
-- **Key**: F3
-- **Action**: Opens Mission Control
-- **Description**: Quick access to Mission Control for managing desktops and windows
-
 ### 💡 Keyboard Brightness Control
 - **File**: `keyboard-brightness.json`
 - **Keys**: 
